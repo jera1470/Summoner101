@@ -1,0 +1,30 @@
+
+[
+  {
+    "id": "cloth",
+    "name": "Cloth Armor",
+    "cost": 300,
+    "armor": 15,
+    "magicResist": 0,
+    "health": 0,
+    "description": "+15 Armor"
+  },
+  {
+    "id": "mantle",
+    "name": "Null-Magic Mantle",
+    "cost": 450,
+    "armor": 0,
+    "magicResist": 25,
+    "health": 0,
+    "description": "+25 Magic Resist"
+  },
+  {
+    "id": "ruby",
+    "name": "Ruby Crystal",
+    "cost": 400,
+    "armor": 0,
+    "magicResist": 0,
+    "health": 150,
+    "description": "+150 Health"
+  }
+]

@@ -1,0 +1,178 @@
+
+[
+  {
+    "id": "garen",
+    "name": "Garen",
+    "range": "Close-Range (Melee)",
+    "damage": "Physical Attacker",
+    "lane": "Solo Top",
+    "description": "Fights at close range with sword attacks, deals physical damage, and holds the solo top lane.",
+    "abilities": [
+      {
+        "key": "Q",
+        "name": "Decisive Strike",
+        "summary": "Sprint briefly, then your next hit stops the enemy from using abilities.",
+        "detail": "Garen gains movement speed, and his next attack deals bonus physical damage and silences the target. Silence temporarily prevents an enemy from casting abilities."
+      },
+      {
+        "key": "W",
+        "name": "Courage",
+        "summary": "Briefly shield yourself and take less damage from enemies.",
+        "detail": "Garen gains defensive benefits, including a temporary shield and reduced incoming damage. This ability helps him survive powerful attacks."
+      },
+      {
+        "key": "E",
+        "name": "Judgment",
+        "summary": "Spin your sword, hitting all nearby enemies several times.",
+        "detail": "Garen spins and deals repeated physical damage to nearby enemies. This ability is useful when fighting multiple enemies standing close together."
+      },
+      {
+        "key": "R",
+        "name": "Demacian Justice",
+        "summary": "Calls down a sword that deals extra damage to weakened enemies.",
+        "ult": true,
+        "detail": "User-study example: 150 / 300 / 450 base damage by rank, plus additional damage based on the target's missing health. These are the study's example values."
+      }
+    ]
+  },
+  {
+    "id": "warwick",
+    "name": "Warwick",
+    "range": "Close-Range (Melee)",
+    "damage": "Physical Attacker",
+    "lane": "Jungle",
+    "description": "A close-range jungler who hunts weakened enemies and heals while fighting.",
+    "abilities": [
+      {
+        "key": "Q",
+        "name": "Jaws of the Beast",
+        "summary": "Bite an enemy to deal damage and restore some of your health.",
+        "detail": "Warwick lunges at an enemy and bites them, dealing magic damage based partly on their health. The bite also restores Warwick's health. Holding the ability allows him to follow his target."
+      },
+      {
+        "key": "W",
+        "name": "Blood Hunt",
+        "summary": "Sense weakened enemies and move faster while chasing them.",
+        "detail": "Warwick gains attack speed against low-health enemies and movement speed when pursuing weakened enemy champions. He can also activate this ability to hunt an enemy champion."
+      },
+      {
+        "key": "E",
+        "name": "Primal Howl",
+        "summary": "Reduce incoming damage, then frighten nearby enemies with a howl.",
+        "detail": "Warwick temporarily reduces incoming damage. When the effect ends, or when reactivated, he howls and causes nearby enemies to flee briefly."
+      },
+      {
+        "key": "R",
+        "name": "Infinite Duress",
+        "summary": "Leap onto an enemy champion, hold them down, and regain health.",
+        "ult": true,
+        "detail": "Warwick leaps forward and suppresses the first enemy champion struck. He attacks repeatedly during the effect, deals magic damage, and heals himself."
+      }
+    ]
+  },
+  {
+    "id": "annie",
+    "name": "Annie",
+    "range": "Long-Range (Ranged)",
+    "damage": "Magic Attacker",
+    "lane": "Mid Lane",
+    "description": "A ranged spellcaster who uses fire spells to deal magic damage and stun enemies.",
+    "abilities": [
+      {
+        "key": "Q",
+        "name": "Disintegrate",
+        "summary": "Throw a fireball at an enemy, dealing magic damage.",
+        "detail": "Annie launches a targeted fireball that deals magic damage. If it defeats its target, she recovers the mana cost and part of its cooldown. This makes it useful for defeating minions."
+      },
+      {
+        "key": "W",
+        "name": "Incinerate",
+        "summary": "Release a wave of fire that damages enemies in front of you.",
+        "detail": "Annie sends flames through a cone-shaped area directly in front of her. All enemies caught inside the area take magic damage. This ability can hit multiple targets at once."
+      },
+      {
+        "key": "E",
+        "name": "Molten Shield",
+        "summary": "Protect an ally with a shield and gain a short movement boost.",
+        "detail": "Annie places a protective shield on herself or an ally. The shield absorbs damage, grants movement speed, and punishes enemies that attack the protected target."
+      },
+      {
+        "key": "R",
+        "name": "Summon: Tibbers",
+        "summary": "Summon a giant fiery bear that damages and attacks nearby enemies.",
+        "ult": true,
+        "detail": "Annie summons Tibbers at a selected location, dealing magic damage to nearby enemies. Tibbers remains on the battlefield and can attack enemies. Annie can command him to move or attack different targets."
+      }
+    ]
+  },
+  {
+    "id": "ashe",
+    "name": "Ashe",
+    "range": "Long-Range (Ranged)",
+    "damage": "Physical Attacker",
+    "lane": "Bot Lane",
+    "description": "A ranged archer who attacks from a distance and slows enemies with icy arrows.",
+    "abilities": [
+      {
+        "key": "Q",
+        "name": "Ranger's Focus",
+        "summary": "Fire arrows rapidly to deal more damage with your attacks.",
+        "detail": "Ashe builds Focus by attacking enemies. Once she has enough Focus, she can activate this ability to increase her attack speed and fire powerful arrow volleys with her basic attacks."
+      },
+      {
+        "key": "W",
+        "name": "Volley",
+        "summary": "Fire several arrows forward, damaging and slowing enemies.",
+        "detail": "Ashe shoots a spread of arrows in a cone in front of her. Enemies hit take physical damage and are slowed. This is useful for keeping enemies at a distance."
+      },
+      {
+        "key": "E",
+        "name": "Hawkshot",
+        "summary": "Send a scouting hawk across the map to reveal hidden areas.",
+        "detail": "Ashe sends a hawk in a chosen direction to reveal areas of the map. The hawk can help locate enemy champions and check dangerous areas before entering them."
+      },
+      {
+        "key": "R",
+        "name": "Enchanted Crystal Arrow",
+        "summary": "Launch a giant ice arrow that stuns the first enemy champion hit.",
+        "ult": true,
+        "detail": "Ashe fires a large magical arrow across the map. It stuns the first enemy champion hit and damages nearby enemies. The stun duration increases with the distance the arrow travels."
+      }
+    ]
+  },
+  {
+    "id": "soraka",
+    "name": "Soraka",
+    "range": "Long-Range (Ranged)",
+    "damage": "Magic Attacker",
+    "lane": "Support",
+    "description": "A ranged support who heals allies, protects teammates, and uses celestial magic.",
+    "abilities": [
+      {
+        "key": "Q",
+        "name": "Starcall",
+        "summary": "Call down a star that damages and slows enemies.",
+        "detail": "Soraka calls a star down onto a target area, dealing magic damage and slowing enemies. Hitting an enemy champion also grants her a healing effect."
+      },
+      {
+        "key": "W",
+        "name": "Astral Infusion",
+        "summary": "Restore an ally's health to help them survive.",
+        "detail": "Soraka sacrifices some of her own health to heal a nearby allied champion. If she has a healing effect from Starcall, she can also share that effect with her ally."
+      },
+      {
+        "key": "E",
+        "name": "Equinox",
+        "summary": "Create a magic zone that prevents enemies from casting abilities.",
+        "detail": "Soraka creates a magical area that silences enemies standing inside it. Enemies remaining in the area when it disappears are briefly rooted, preventing them from moving."
+      },
+      {
+        "key": "R",
+        "name": "Wish",
+        "summary": "Heal all allied champions, wherever they are on the map.",
+        "ult": true,
+        "detail": "Soraka restores health to herself and every allied champion, regardless of their location. The healing is stronger for teammates with low health."
+      }
+    ]
+  }
+]

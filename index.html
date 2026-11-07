@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summoner 101</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <h1>SUMMONER 101</h1>
+            <p>Learn the game, one step at a time.</p>
+        </div>
+
+        <nav aria-label="Main navigation">
+            <button id="roster-btn" class="active">
+                1. Champions
+            </button>
+
+            <button id="abilities-btn" disabled>
+                2. Abilities
+            </button>
+
+            <button id="sandbox-btn" disabled>
+                3. Sandbox
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SCREEN 1: CHAMPION PICKER -->
+
+        <section id="roster-page">
+            <div class="page-heading">
+                <h2>Choose Your Champion</h2>
+                <p>
+                    Discover champions that match your playstyle.
+                    Choose one to learn their abilities.
+                </p>
+            </div>
+
+            <div class="filter-panel">
+                <h3>Find Your Champion</h3>
+
+                <div class="filter-grid"></div>
+            </div>
+
+            <div class="champion-grid"></div>
+        </section>
+
+        <!-- SCREEN 2: ABILITY INSPECTOR -->
+
+        <section id="abilities-page" hidden>
+            <div class="page-heading">
+                <h2>Learn Your Abilities</h2>
+                <p>
+                    Learn what each ability does before practicing
+                    in the sandbox.
+                </p>
+            </div>
+
+            <div id="ability-inspector"></div>
+        </section>
+
+        <!-- SCREEN 3: COMBAT SANDBOX -->
+
+        <section id="sandbox-page" hidden>
+            <div class="page-heading">
+                <h2>Combat Sandbox</h2>
+                <p>
+                    Test defensive items against incoming attacks
+                    and see how your choices affect survival.
+                </p>
+            </div>
+
+            <div class="sandbox-intro">
+                <strong>Practice Scenario: Garen</strong>
+                <p>
+                    This exercise uses Garen to demonstrate
+                    how defensive items work against Annie
+                    and Ashe.
+                </p>
+            </div>
+
+            <div id="sandbox-content"></div>
+
+            <div class="page-navigation">
+                <button id="sandbox-back" class="secondary-button">
+                    ← Back to Abilities
+                </button>
+
+                <button id="sandbox-roster">
+                    Choose Another Champion
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

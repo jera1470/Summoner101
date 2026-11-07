@@ -1,0 +1,21 @@
+
+[
+  {
+    "id": "annie",
+    "name": "Annie",
+    "role": "Mid-lane Mage",
+    "type": "magic",
+    "damage": 758,
+    "counter": "mantle",
+    "counterDamage": 637
+  },
+  {
+    "id": "ashe",
+    "name": "Ashe",
+    "role": "Bot-lane Marksman",
+    "type": "physical",
+    "damage": 725,
+    "counter": "cloth",
+    "counterDamage": 654
+  }
+]
