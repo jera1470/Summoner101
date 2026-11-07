@@ -1,0 +1,15 @@
+# IDE & Editor
+.idea/
+.vscode/
+
+# Agent & local tooling
+skills/
+.agents/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Dependencies & logs
+node_modules/
+*.log
