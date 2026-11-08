@@ -79,9 +79,10 @@ export function initRoster(
                 card.classList.add("chosen");
             }
 
-            const portrait = document.createElement("div");
-            portrait.className = "portrait-placeholder";
-            portrait.textContent = "Champion Portrait";
+            const portrait = document.createElement("img");
+            portrait.className = "champion-portrait";
+            portrait.src = `assets/images/${champion.id}.jpg`;
+            portrait.alt = `${champion.name} portrait`;
 
             const name = document.createElement("h3");
             name.textContent = champion.name;

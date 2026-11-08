@@ -151,10 +151,11 @@ export function initSandbox(root, items, scenarios) {
         const enemyHeader = el("div", "enemy-header");
 
         const portrait = el(
-            "div",
-            "portrait-placeholder enemy-placeholder",
-            "Enemy Portrait"
+            "img",
+            "enemy-portrait"
         );
+        portrait.src = `assets/images/${result.enemy.id}.jpg`;
+        portrait.alt = `${result.enemy.name} portrait`;
 
         const enemyText = el("div", "enemy-labels");
 
