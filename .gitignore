@@ -13,3 +13,6 @@ Thumbs.db
 # Dependencies & logs
 node_modules/
 *.log
+
+# Documents & design files (do not commit)
+*.pdf
