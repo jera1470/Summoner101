@@ -77,10 +77,11 @@ document.getElementById("sandbox-roster")
 
 // CHAMPION SELECTION
 
-function selectChampion(champion, openInspector) {
+function selectChampion(champion, openInspector, updateSandbox) {
     selectedChampion = champion;
 
     openInspector(champion);
+    updateSandbox(champion);
 
     updateNavigation();
 
@@ -121,19 +122,19 @@ async function start() {
             () => showPage("roster")
         );
 
+        const updateSandbox = initSandbox(
+            document.getElementById("sandbox-content"),
+            items,
+            scenarios
+        );
+
         initRoster(
             document.querySelector(".filter-grid"),
             document.querySelector(".champion-grid"),
             champions,
             (champion) => {
-                selectChampion(champion, openInspector);
+                selectChampion(champion, openInspector, updateSandbox);
             }
-        );
-
-        initSandbox(
-            document.getElementById("sandbox-content"),
-            items,
-            scenarios
         );
 
         updateNavigation();

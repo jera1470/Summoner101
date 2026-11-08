@@ -11,10 +11,32 @@ export function initSandbox(root, items, scenarios) {
         items.map(item => [item.id, item])
     );
 
+    let currentChampion = null;
     let inventory = [null, null, null];
     let enemyIndex = 0;
     let pendingItem = null;
     let notice = "";
+
+    function setChampion(champion) {
+        currentChampion = champion;
+        inventory = [null, null, null];
+        enemyIndex = 0;
+        pendingItem = null;
+        notice = "";
+
+        const introTitle = document.getElementById("sandbox-intro-title");
+        const introDesc = document.getElementById("sandbox-intro-desc");
+        if (introTitle && champion) {
+            introTitle.textContent = `Practice Scenario: ${champion.name}`;
+        }
+        if (introDesc && champion) {
+            introDesc.textContent =
+                `This exercise uses ${champion.name} to demonstrate ` +
+                "how defensive items work against Annie and Ashe.";
+        }
+
+        render();
+    }
 
     function calculate() {
         const equipped = inventory
@@ -121,15 +143,26 @@ export function initSandbox(root, items, scenarios) {
 
     function render() {
         const result = calculate();
+        const champName = currentChampion ? currentChampion.name : "Champion";
         root.innerHTML = "";
 
         // TOP TOOLBAR
 
         const bar = el("div", "sandbox-topbar");
+        const playerBadge = el("div", "sandbox-player-badge");
 
-        bar.append(
-            el("span", "", "GAREN · LEVEL 1 · PRACTICE SCENARIO")
+        if (currentChampion) {
+            const playerImg = el("img", "sandbox-player-img");
+            playerImg.src = `assets/images/${currentChampion.id}.jpg`;
+            playerImg.alt = `${champName} portrait`;
+            playerBadge.append(playerImg);
+        }
+
+        playerBadge.append(
+            el("span", "", `${champName.toUpperCase()} · LEVEL 1 · PRACTICE SCENARIO`)
         );
+
+        bar.append(playerBadge);
 
         const reset = el("button", "", "Reset Scenario");
         reset.type = "button";
@@ -216,7 +249,7 @@ export function initSandbox(root, items, scenarios) {
                 "p",
                 "",
                 `${result.damage} ${result.enemy.type} damage ` +
-                `incoming · Garen has ${result.health} HP`
+                `incoming · ${champName} has ${result.health} HP`
             )
         );
 
@@ -440,7 +473,7 @@ export function initSandbox(root, items, scenarios) {
                     : "Cloth Armor adds 15 Armor.";
 
             message.textContent =
-                `${explanation} Garen takes ${result.damage} ` +
+                `${explanation} ${champName} takes ${result.damage} ` +
                 "damage and " +
                 (result.remaining > 0
                     ? `survives with ${result.remaining} HP.`
@@ -452,7 +485,7 @@ export function initSandbox(root, items, scenarios) {
             message.textContent =
                 "Ruby Crystal adds 150 Health but does not " +
                 `reduce ${result.enemy.type} damage. ` +
-                `Garen takes ${result.damage} damage and ` +
+                `${champName} takes ${result.damage} damage and ` +
                 (result.remaining > 0
                     ? `survives with ${result.remaining} HP.`
                     : "does not survive.");
@@ -461,10 +494,10 @@ export function initSandbox(root, items, scenarios) {
             message.textContent =
                 result.enemy.type === "magic"
                     ? "Cloth Armor reduces physical damage, " +
-                      "not magic. Garen still takes " +
+                      `not magic. ${champName} still takes ` +
                       `${result.damage} damage and does not survive.`
                     : "Null-Magic Mantle reduces magic damage, " +
-                      "not physical. Garen still takes " +
+                      `not physical. ${champName} still takes ` +
                       `${result.damage} damage and does not survive.`;
         }
 
@@ -482,4 +515,5 @@ export function initSandbox(root, items, scenarios) {
     }
 
     render();
+    return setChampion;
 }
