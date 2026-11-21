@@ -5,17 +5,49 @@
     "name": "Annie",
     "role": "Mid-lane Mage",
     "type": "magic",
-    "damage": 758,
-    "counter": "mantle",
-    "counterDamage": 637
+    "health": 560,
+    "armor": 23,
+    "magicResist": 30,
+    "rawDamage": 1000
   },
   {
     "id": "ashe",
     "name": "Ashe",
     "role": "Bot-lane Marksman",
     "type": "physical",
-    "damage": 725,
-    "counter": "cloth",
-    "counterDamage": 654
+    "health": 610,
+    "armor": 26,
+    "magicResist": 33,
+    "rawDamage": 1000
+  },
+  {
+    "id": "garen",
+    "name": "Garen",
+    "role": "Top-lane Fighter",
+    "type": "physical",
+    "health": 690,
+    "armor": 38,
+    "magicResist": 32,
+    "rawDamage": 1000
+  },
+  {
+    "id": "warwick",
+    "name": "Warwick",
+    "role": "Jungle Fighter",
+    "type": "physical",
+    "health": 620,
+    "armor": 33,
+    "magicResist": 32,
+    "rawDamage": 1000
+  },
+  {
+    "id": "soraka",
+    "name": "Soraka",
+    "role": "Support Mage",
+    "type": "magic",
+    "health": 605,
+    "armor": 32,
+    "magicResist": 30,
+    "rawDamage": 1000
   }
 ]

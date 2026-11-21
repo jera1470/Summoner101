@@ -70,8 +70,9 @@ export function initRoster(
             const card = document.createElement("article");
 
             card.className = "champion-card";
+            const matches = matching(champion);
 
-            if (!matching(champion)) {
+            if (!matches) {
                 card.classList.add("dimmed");
             }
 
@@ -93,6 +94,13 @@ export function initRoster(
             const select = document.createElement("button");
             select.type = "button";
             select.textContent = "View Champion";
+
+            select.disabled = !matches;
+            select.setAttribute(
+                "aria-label",
+                `View ${champion.name}'s abilities`
+            );
+
 
             select.addEventListener("click", () => {
                 chosenId = champion.id;

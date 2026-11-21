@@ -12,26 +12,47 @@
         "key": "Q",
         "name": "Decisive Strike",
         "summary": "Sprint briefly, then your next hit stops the enemy from using abilities.",
-        "detail": "Garen gains movement speed, and his next attack deals bonus physical damage and silences the target. Silence temporarily prevents an enemy from casting abilities."
+        "detail": "Garen gains movement speed, and his next attack deals bonus physical damage and silences the target. Silence temporarily prevents an enemy from casting abilities.",
+        "numbers": {
+          "cooldowns": [8, 8, 8, 8, 8],
+          "cost": "No resource cost",
+          "extra": "Silence duration: 1.5 seconds."
+        }
       },
       {
         "key": "W",
         "name": "Courage",
         "summary": "Briefly shield yourself and take less damage from enemies.",
-        "detail": "Garen gains defensive benefits, including a temporary shield and reduced incoming damage. This ability helps him survive powerful attacks."
+        "detail": "Garen gains defensive benefits, including a temporary shield and reduced incoming damage. This ability helps him survive powerful attacks.",
+        "numbers": {
+          "cooldowns": [22, 20, 17, 15, 12],
+          "cost": "No resource cost",
+          "extra": "The passive component also increases Armor and Magic Resist as Garen defeats enemies."
+        }
       },
       {
         "key": "E",
         "name": "Judgment",
         "summary": "Spin your sword, hitting all nearby enemies several times.",
-        "detail": "Garen spins and deals repeated physical damage to nearby enemies. This ability is useful when fighting multiple enemies standing close together."
+        "detail": "Garen spins and deals repeated physical damage to nearby enemies. This ability is useful when fighting multiple enemies standing close together.",
+        "numbers": {
+          "cooldowns": [9, 8.25, 7.5, 6.75, 6],
+          "cost": "No resource cost",
+          "extra": "Repeated hits can reduce an enemy champion's Armor."
+        }
       },
       {
         "key": "R",
         "name": "Demacian Justice",
-        "summary": "Calls down a sword that deals extra damage to weakened enemies.",
+        "summary": "Call down a sword that deals extra damage to weakened enemies.",
         "ult": true,
-        "detail": "User-study example: 150 / 300 / 450 base damage by rank, plus additional damage based on the target's missing health. These are the study's example values."
+        "detail": "Garen deals true damage based on the target's missing health. True damage is not reduced by Armor or Magic Resist.",
+        "numbers": {
+          "cooldowns": [120, 100, 80],
+          "cost": "No resource cost",
+          "extra": "Base true damage by rank: 125 / 200 / 275. Additional damage: 25% / 30% / 35% of the target's missing health.",
+          "example": "Rank 1 example: If an enemy is missing 400 HP, damage = 125 + (0.25 × 400) = 225 true damage."
+        }
       }
     ]
   },
@@ -47,26 +68,47 @@
         "key": "Q",
         "name": "Jaws of the Beast",
         "summary": "Bite an enemy to deal damage and restore some of your health.",
-        "detail": "Warwick lunges at an enemy and bites them, dealing magic damage based partly on their health. The bite also restores Warwick's health. Holding the ability allows him to follow his target."
+        "detail": "Warwick lunges at an enemy and bites them, dealing magic damage based partly on their health. The bite also restores Warwick's health. Holding the ability allows him to follow his target.",
+        "numbers": {
+          "cooldowns": [8, 7.5, 7, 6.5, 6],
+          "cost": "80 / 85 / 90 / 95 / 100 mana by rank",
+          "extra": "The bite's damage depends partly on the target's maximum health."
+        }
       },
       {
         "key": "W",
         "name": "Blood Hunt",
         "summary": "Sense weakened enemies and move faster while chasing them.",
-        "detail": "Warwick gains attack speed against low-health enemies and movement speed when pursuing weakened enemy champions. He can also activate this ability to hunt an enemy champion."
+        "detail": "Warwick gains attack speed against low-health enemies and movement speed when pursuing weakened enemy champions. He can also activate this ability to hunt an enemy champion.",
+        "numbers": {
+          "cooldowns": [80, 70, 60, 50, 40],
+          "cost": "55 mana",
+          "extra": "Blood Hunt detects enemies below 50% health, with stronger bonuses below 25%.",
+          "example": "If an enemy has 1,000 maximum HP, the 50% threshold is 500 HP and the 25% threshold is 250 HP."
+        }
       },
       {
         "key": "E",
         "name": "Primal Howl",
         "summary": "Reduce incoming damage, then frighten nearby enemies with a howl.",
-        "detail": "Warwick temporarily reduces incoming damage. When the effect ends, or when reactivated, he howls and causes nearby enemies to flee briefly."
+        "detail": "Warwick temporarily reduces incoming damage. When the effect ends, or when reactivated, he howls and causes nearby enemies to flee briefly.",
+        "numbers": {
+          "cooldowns": [15, 14, 13, 12, 11],
+          "cost": "40 mana",
+          "extra": "Damage reduction lasts up to 2.5 seconds. The howl fears enemies for 1 second."
+        }
       },
       {
         "key": "R",
         "name": "Infinite Duress",
         "summary": "Leap onto an enemy champion, hold them down, and regain health.",
         "ult": true,
-        "detail": "Warwick leaps forward and suppresses the first enemy champion struck. He attacks repeatedly during the effect, deals magic damage, and heals himself."
+        "detail": "Warwick leaps forward and suppresses the first enemy champion struck. He attacks repeatedly during the effect, deals magic damage, and heals himself.",
+        "numbers": {
+          "cooldowns": [110, 90, 70],
+          "cost": "100 mana",
+          "extra": "Suppression duration: 1.5 seconds."
+        }
       }
     ]
   },
@@ -82,26 +124,46 @@
         "key": "Q",
         "name": "Disintegrate",
         "summary": "Throw a fireball at an enemy, dealing magic damage.",
-        "detail": "Annie launches a targeted fireball that deals magic damage. If it defeats its target, she recovers the mana cost and part of its cooldown. This makes it useful for defeating minions."
+        "detail": "Annie launches a targeted fireball that deals magic damage. If it defeats its target, she recovers the mana cost and part of its cooldown. This makes it useful for defeating minions.",
+        "numbers": {
+          "cooldowns": [4, 4, 4, 4, 4],
+          "cost": "60 / 65 / 70 / 75 / 80 mana by rank",
+          "extra": "Casting range: 625 units. Defeating a target refunds the mana cost and reduces the remaining cooldown."
+        }
       },
       {
         "key": "W",
         "name": "Incinerate",
         "summary": "Release a wave of fire that damages enemies in front of you.",
-        "detail": "Annie sends flames through a cone-shaped area directly in front of her. All enemies caught inside the area take magic damage. This ability can hit multiple targets at once."
+        "detail": "Annie sends flames through a cone-shaped area directly in front of her. All enemies caught inside the area take magic damage. This ability can hit multiple targets at once.",
+        "numbers": {
+          "cooldowns": [7, 7, 7, 7, 7],
+          "cost": "70 / 75 / 80 / 85 / 90 mana by rank",
+          "extra": "Casting range: 600 units."
+        }
       },
       {
         "key": "E",
         "name": "Molten Shield",
         "summary": "Protect an ally with a shield and gain a short movement boost.",
-        "detail": "Annie places a protective shield on herself or an ally. The shield absorbs damage, grants movement speed, and punishes enemies that attack the protected target."
+        "detail": "Annie places a protective shield on herself or an ally. The shield absorbs damage, grants movement speed, and punishes enemies that attack the protected target.",
+        "numbers": {
+          "cooldowns": [10, 10, 10, 10, 10],
+          "cost": "60 / 65 / 70 / 75 / 80 mana by rank",
+          "extra": "Casting range: 800 units."
+        }
       },
       {
         "key": "R",
         "name": "Summon: Tibbers",
         "summary": "Summon a giant fiery bear that damages and attacks nearby enemies.",
         "ult": true,
-        "detail": "Annie summons Tibbers at a selected location, dealing magic damage to nearby enemies. Tibbers remains on the battlefield and can attack enemies. Annie can command him to move or attack different targets."
+        "detail": "Annie summons Tibbers at a selected location, dealing magic damage to nearby enemies. Tibbers remains on the battlefield and can attack enemies. Annie can command him to move or attack different targets.",
+        "numbers": {
+          "cooldowns": [130, 115, 100],
+          "cost": "100 mana",
+          "extra": "Summoning range: 600 units. In patch 26.23, Tibbers' aura deals 10 / 15 / 20 (+4% AP) magic damage per second, based on ultimate rank."
+        }
       }
     ]
   },
@@ -117,26 +179,47 @@
         "key": "Q",
         "name": "Ranger's Focus",
         "summary": "Fire arrows rapidly to deal more damage with your attacks.",
-        "detail": "Ashe builds Focus by attacking enemies. Once she has enough Focus, she can activate this ability to increase her attack speed and fire powerful arrow volleys with her basic attacks."
+        "detail": "Ashe builds Focus by attacking enemies. Once she has enough Focus, she can activate this ability to increase her attack speed and fire powerful arrow volleys with her basic attacks.",
+        "numbers": {
+          "cooldowns": [],
+          "cost": "30 mana",
+          "extra": "Requires 4 Focus stacks. Its empowered attack effect lasts 6 seconds. Activation depends on Focus rather than a regular timed cooldown."
+        }
       },
       {
         "key": "W",
         "name": "Volley",
         "summary": "Fire several arrows forward, damaging and slowing enemies.",
-        "detail": "Ashe shoots a spread of arrows in a cone in front of her. Enemies hit take physical damage and are slowed. This is useful for keeping enemies at a distance."
+        "detail": "Ashe shoots a spread of arrows in a cone in front of her. Enemies hit take physical damage and are slowed. This is useful for keeping enemies at a distance.",
+        "numbers": {
+          "cooldowns": [18, 15, 11, 8, 4],
+          "cost": "75 / 70 / 65 / 60 / 55 mana by rank",
+          "extra": "Range: 1,200 units. Arrows apply Ashe's slowing passive."
+        }
       },
       {
         "key": "E",
         "name": "Hawkshot",
         "summary": "Send a scouting hawk across the map to reveal hidden areas.",
-        "detail": "Ashe sends a hawk in a chosen direction to reveal areas of the map. The hawk can help locate enemy champions and check dangerous areas before entering them."
+        "detail": "Ashe sends a hawk in a chosen direction to reveal areas of the map. The hawk can help locate enemy champions and check dangerous areas before entering them.",
+        "numbers": {
+          "cooldowns": [5, 5, 5, 5, 5],
+          "cost": "No resource cost",
+          "extra": "Stores up to 2 charges. Charge recharge time by rank: 90 / 80 / 70 / 60 / 50 seconds. The 5-second cooldown is the interval between casts, not the charge recharge time.",
+          "skipHasteExample": true
+        }
       },
       {
         "key": "R",
         "name": "Enchanted Crystal Arrow",
         "summary": "Launch a giant ice arrow that stuns the first enemy champion hit.",
         "ult": true,
-        "detail": "Ashe fires a large magical arrow across the map. It stuns the first enemy champion hit and damages nearby enemies. The stun duration increases with the distance the arrow travels."
+        "detail": "Ashe fires a large magical arrow across the map. It stuns the first enemy champion hit and damages nearby enemies. The stun duration increases with the distance the arrow travels.",
+        "numbers": {
+          "cooldowns": [100, 80, 60],
+          "cost": "100 mana",
+          "extra": "Global-range ultimate. Stun duration increases with distance traveled."
+        }
       }
     ]
   },
@@ -152,26 +235,46 @@
         "key": "Q",
         "name": "Starcall",
         "summary": "Call down a star that damages and slows enemies.",
-        "detail": "Soraka calls a star down onto a target area, dealing magic damage and slowing enemies. Hitting an enemy champion also grants her a healing effect."
+        "detail": "Soraka calls a star down onto a target area, dealing magic damage and slowing enemies. Hitting an enemy champion also grants her a healing effect.",
+        "numbers": {
+          "cooldowns": [8, 7, 6, 5, 4],
+          "cost": "45 / 50 / 55 / 60 / 65 mana by rank",
+          "extra": "Casting range: 810 units."
+        }
       },
       {
         "key": "W",
         "name": "Astral Infusion",
         "summary": "Restore an ally's health to help them survive.",
-        "detail": "Soraka sacrifices some of her own health to heal a nearby allied champion. If she has a healing effect from Starcall, she can also share that effect with her ally."
+        "detail": "Soraka sacrifices some of her own health to heal a nearby allied champion. If she has a healing effect from Starcall, she can also share that effect with her ally.",
+        "numbers": {
+          "cooldowns": [6, 5, 4, 3, 2],
+          "cost": "40 / 45 / 50 / 55 / 60 mana by rank, plus a health cost",
+          "extra": "Healing range: 550 units."
+        }
       },
       {
         "key": "E",
         "name": "Equinox",
         "summary": "Create a magic zone that prevents enemies from casting abilities.",
-        "detail": "Soraka creates a magical area that silences enemies standing inside it. Enemies remaining in the area when it disappears are briefly rooted, preventing them from moving."
+        "detail": "Soraka creates a magical area that silences enemies standing inside it. Enemies remaining in the area when it disappears are briefly rooted, preventing them from moving.",
+        "numbers": {
+          "cooldowns": [20, 19, 18, 17, 16],
+          "cost": "70 / 75 / 80 / 85 / 90 mana by rank",
+          "extra": "Casting range: 925 units. Silence prevents ability casting; rooting prevents movement."
+        }
       },
       {
         "key": "R",
         "name": "Wish",
         "summary": "Heal all allied champions, wherever they are on the map.",
         "ult": true,
-        "detail": "Soraka restores health to herself and every allied champion, regardless of their location. The healing is stronger for teammates with low health."
+        "detail": "Soraka restores health to herself and every allied champion, regardless of their location. The healing is stronger for teammates with low health.",
+        "numbers": {
+          "cooldowns": [150, 135, 120],
+          "cost": "100 mana",
+          "extra": "Global range: affects all allied champions regardless of location."
+        }
       }
     ]
   }
